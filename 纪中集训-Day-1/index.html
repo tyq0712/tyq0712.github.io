@@ -27,12 +27,12 @@
 <meta property="og:site_name" content="tyqtyq 的博客">
 <meta property="og:description" content="纪中集训 Day 1">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-21T08:27:46.000Z">
-<meta property="article:modified_time" content="2021-06-21T08:27:46.432Z">
+<meta property="article:published_time" content="2021-06-21T09:05:43.000Z">
+<meta property="article:modified_time" content="2021-06-21T09:19:26.480Z">
 <meta property="article:author" content="tyqtyq">
 <meta property="article:tag" content="纪中集训">
 <meta property="article:tag" content="OI">
-<meta property="article:tag" content="(what learned today)">
+<meta property="article:tag" content="构造题选做">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://tyq0712.github.io/%E7%BA%AA%E4%B8%AD%E9%9B%86%E8%AE%AD-Day-1/">
@@ -79,7 +79,11 @@
   </style>
 </noscript>
 
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -120,9 +124,14 @@
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
 
   </li>
-        <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-about">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
 
   </li>
   </ul>
@@ -175,8 +184,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-06-21 16:27:46" itemprop="dateCreated datePublished" datetime="2021-06-21T16:27:46+08:00">2021-06-21</time>
+              <time title="Created: 2021-06-21 17:05:43 / Modified: 17:19:26" itemprop="dateCreated datePublished" datetime="2021-06-21T17:05:43+08:00">2021-06-21</time>
             </span>
 
           
@@ -191,7 +201,7 @@
 
       
         <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="73636886430869f9a816dbf1506f15c6c7d52668647556af7e6258db72fde225">c631a34eda396bfb0137ae62281e8566cd6cb6e72dfe3cc5590eeabf1fb5ae009e364da84db6b61edddfab1c845ae3079d87d4de4da5664a26d948e75150374c426fe0179dc5f9257042d3afe9cdc649f3b1bd833af588f484386930ae56d1cad465ac2cbde4c4735cf2cc424e5e473fd1f7f4fb2820846dd0d80855919ccc3621cd4df41730637d225a9ff57c75a5df106a9edda0ab32e16872ac39015897190250cece5e12602f40a8a8abd1cb932f309bbffdf74c62f80a464a4640f914c758863d60681c6e6aaa5e869ab2d162ad65a6a3e845153d01f1f47c9b3d5d4581077593a125d6bff8a346d53615420be26cb22368909530433cf187cdc91b0a1b01e28454a40b6f3401045823d45f60e842d1f24a15012b713e3fcf38221ddabe82a0da9d67c5b1d1f4d4a5dad556f3e35618e191679d880f91b5df4666a0af43c05dbb79041b1cec862d18e5b853a1c8a64b5273878051376b44bea2ce5fa61f18eea882249050892f8a539890e17c0f2be31bf58440dcea3e8407a7fec16e736e6eca8686c9c8dce391ad9b27be53d07b962563cac511a00890f35d8e2b1bb1a1b9bb2fc4009fe1eca71c24f352f4aba3d096795e2db4ce196a70c93b395f5dffab0bd95fe9fb1abc27d4a41e069f9d48dcf142e484f10fe12afd34c352c0a3a3bac5249ac8456080e3bdc73ce5966ed5297b959d166740c743db87d4b900127548e02540b9664b01091b7aad6b803e61ce22ef1841ea8fd3070cebfb2c12fb4883bf6902cbbf2ddc58bb4c10d518de32fbb3a243543cece2a9152ce65daf5817d52a53d42a902a2764de97df1b8cadc5a83d7b162cebd3d4b073e1afb7f5c067c6aae4ef8218de70c0c5369053504a2b68b59a5bf6763f32e020d51bb731c1454e64f7d9058412425af6d1cbfa9ac6c8fea63752001b6cabb8a4cdc192e69fee518d7f5a96a26819599c6ff84afd8f7d361bb2b94578795513a08571453169b55ef26af9b3ff722ba200326a3a65b00899935771eb7b9d53579a20667df860c6bfea344fc98d858f410d92939a3d85dd80d46d3f51db477bf8abe2038624a226f3664aa54ac39ce949bb846a9e78ab9112888fc99cc6dcaed1c3215c17e53dc06248078028447960b360d096238560a4c6b50a1c552481a809a8628148b850aac6274a24d78b028a979f02a2471aa98a8f425b60a4a7de4fb1e1a1e7a98d9a926f750c215fa524059bbbe5325541a438fadc8ebede00a13b350da31a5f79cebf231a6acee5ceae778291c1d320e796c8d52ac0eba9f0177b599033a1d3814ce97823bb4116a080cd1ee4a4c0f43a5701dceede547d4e109b1e958db1f7529f7471378aeadfd53cd379b779740d5d42f9ba109afc80839dd28d36a93ecdfbd2ea7037c9258b72de55071ce58e26e5fc4a84f97bca2000ac5d430d9a0b65e4317edb122f5ae75bed53a0b379148f66ded38c56f55cbcb241e45697717565d32f60fa6af03ee1e46042c40c2609033dd2</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="f77e8bcf1bf4f216e52a3b5ab93060f9492dd6a98ad74c94958a32f4525c9aae">c631a34eda396bfb0137ae62281e8566c7777a24fb0e646b92c3d5f4bb1a9b8ed50d8b4a523c6550699d1c785485afb2b4325eb94e11a71773d2bd7c862da8c96264c239105d69901cdabd6ffb326a2c990c9b8b5b2caa53f3b954c52998c50aaf47ef136da7b26baa8a6a71131ee5c09092abf4e60b9c8ce9e0d8a6b5d3562bdb73c13165717e315c7c2d27a160a65dd6afd1b1436c23ada5900af73273e97b395e1e9133baa4e6c0548c966fc66909f88f7c5a7a8cf99132a0a08ff331e94d55c2d0c11d1d89f7eaf18097fe2a300015c8228d683e542dcd38201f428899103b87eec908f276d4d6dca9c91c765f7d2c84c32e08f710e643eaa48afbdcbd2d449b597a0a91323dd13cd45fdc22557e9664db5408025a99f6b9531b5cbac786a298e223dd6e3ab71b4218ec7bd70cb98bb00363438f054d73cfb463fec24603920104193ef0c5df5eb6133b4c5d08fc27cb8a2345d75554894e5a3f89d8bbd7ec9641b6caf274c1a989abde5d6997867126d3921c02a3aafbf0bdd045ef8476626cf2b0f076528b0679cd443cfa041fda5ab13f2698734ac332b72e149c46055a1ce3d85243732ed26728914b49c855ad946304af8ed9d0431cdaad67300004b5d419ab379c42e5bc4cf905b7569009664de641756d411e1d4ec8d89a2eecb1796f573cbd884f4c561d82ca168e09294735882f63892b60ddb31db49a918608ae3fa4082e495883a4b99db1bf79455de5f27bb793748ebf9f64c2051da4ccb701268e1fe02425de0675eaf50c9e9dadef2ac43087813e82926890cab15c459a72c3e874d77d012f8625486477310200b2298b7a6a9d5587da5b08bd7172200b4dd0c4eeb8fe8a0538d257619a4d6aa2d923ebe36bb42564b1d52d84f04b5fcb104adc0ec852a9938d7174be0fe38eb9311147cd7b75c80f4c95a75b89966109b674206fb3bebbda2dbe5c53a2b477b85929acc8077afe0bc575ba1de4277ce6312689fb40ef2ae0a92eb9538526aa88f5dcb801fcfbeb452265f6c6f42061f8e4a37a717bb4fee84dc5143eed289ce06796eee9ea0d2fb34f7ddca0068c07da9d1b6d3ac550ebb645514fcc2a011b0ba7713a2458816c471e7c55e44eab7568668c740887c57e3befa818688bd2cb4af25c8e2cbf51969e2c1e6e3e93256c94187b9cf76a240b9db04a2d3a037fb46e6b03a9a6f05a16648040a508c7c209d2019c390517a2fbb1645e325a91ffb049c996377638bd4714dd6fd406c8208a581eb3e0bd215ba671be293d9564331b895c7425ba32c9f18c4e282d15dd39183d5ffea5d3f5f4673bd43473c59d8d3d7b61eee22f573d60bf4d25b5f1fa17e42e5a719691bf7b80ba5e0624da92910cc163685730272aea65976f858468023b3aa2227f6b41418406a5b5c5035b6586fd9e757b0163b6ad8a146deadf70ffbb10ecdf0ec2a75cf80d7c6f9c40de03cc9ae5fad26ae0fc3f3f2a5873924aae5e8f83189f7b41876c3ebe2a9e59430d6b14398f7cfff9b6413dfb7c15fb9ae35f36cf085beceef8ea4d50ac684dea1d011851d36de42ed41a0086e567adaabaf9ce6e74cd90372389b38e9c7585730a90eefb20678cb6e0a1ddaca7c35cba390e704e0ed8d17dc53f9cfdefc086cb38747a3766f4db26a3999345d0a6f9920b81a9699c44bede5dbb84354ea02f973f4094bc583703d49ec50c389e7cb7809a989db3802917bc867f0814515c7fbffbaec8205647afc4b7e9627219efcfaa77031ac38895653417868b691ef93dfb94029f03f2eec20d6f3c7f23d00c8af537dcd4a2d22b45cf805444a82327aa6fc826dbcfac8b3ca60813460853545566e4f22c0cf1e7fd017663ab9387e03b902088846b9449c5f94117e0196be287afacfce6ee740443b062b41ad855a8079a740b0d0f379b3423463cf140c5be07c51c17604712cd29ff2e3eb3e8d3e5f7689b02dd3ad1674cadf38853f9bfcb28493384ca457ac422c5dda689d749042c0413b9df67bbd5f0a4f8992aea9747c59b3ff196c779086ef442d4d6d92e4db63854f5bf29370d44ec4ab4aa30e6fed9bf239361b6716f3948adc50aace7ffc68d22d84ff67c3d578f4ef788b49b34dd81d8a191759ece7cadee7af3a40fd35b2fc731f8d3a3f58f7485fdfdde5bd748afad155fa14f9541e81059afdbbefafba78ed5517bf2173ccf916dd646d2634e90839bc27051de14cdae25917caea773cca80487b1d51c488e2c17a532e56c03883b73fe88cde61bdd329c8e1bc46589f02156983d2ee887d3c22034c7c53b89431a3c47365a026789a06a2309be25fc049d2f3e4e52978d056c77b0fa9d3c1b41e26ff7e013fbe8540b091e40ce46f3d461a8d837598c92679bffc14b5a6fad0cce861d754a72ec3e5571a16fc2cf734d088b592397411e181ead7159eef5a30665c4cbe89bb6da82f616b90bc96864209be150f04289eb2ea71016df9671787254025025feff4a8c717da5b252845d0bb6c94ab7c07021c29c1ad583f9e91f7890ab834117f66ea073f61811c1c6298b7f1bbbdc0aa76aecf7972f56f0d44c5e05ad7febbaf6156da03c6f28a39d0323c51ab42af42b26c07e760cdcbdddc55fe242f58b7537ef18f3d53524aeba4e0db39ecc3dc43a01238671637915ed58009d06f4b90e661062eb33ce6a9000c56da2c3dde83524382578407be029fedd305fb03a6aa439eddb5bea6287bdfbd8ffcc4c018bf2aab3f1ef0649c58815c08b81cc824e53d0a132c707f4fed07e5396f283d8c699a2a993ebb048b33ad559a71c208694c336ff9c6b7eb0247fbeebff64ce407a625f487bd683054dce038127057546bb967eac52de7563642441bf97610a43e620d7cad0caa1f095b264150a8f131de712e826d09b39d2d9021398d3156ace9e01bdb5deebbdaf0904967d51c096d1b765fa8af1cb03d87dbb29d48911a06779b4576a0b1da9010f33353e04f5ef114e1cc9567b81843a3fe1d1f563b1162f7e92db8016663d66ebc3e17b02a2f453381cb4783dd6288c67e11656a299c58dd42b49a641d2e75b7dbdfd9f5b63ce56a99d5a782c4215b44a269603648c20f93f3c96c8298805bd57f327bed65adadd8d4cbaf3607cacfbdf4820ed58e440948f797ee689cf7901a571763a0cbf483feed63efc188554826d44259c42843fbc744ac0a08924a60b3d65bc115415e587c084cb7c9001c46de8d8c1c7c86574bcd1e984cacef705c50e3ffee13c4a49f53121146065185b1f77515b53992d19737053c43513477290fe29d89c190aecc80762b5e613c09a438778921f492f737e53b899eaad63c2e60781dc977ba751dc52cb20d16ba40b25e3d87a7db2c0022862a10c9e1166a6b16ed3f76097b8bc4ab53941b711c4295bf51cec5d211c1270e5658f8aebba71dd9707c7c41b2d37e25f6f5b7539ad62a0d1073519d9d7c6b29d3ec6070b13c98921ef63e6874b836edd71be6cc24d3c89c8480b4751821521cd6c1343209427390512a13371fb398a352a99718af698bd32699130ae07abb3b9ac832d85b5a69dc5baf40a550ad808a4ae84391d75b248b56f719407421bb6acd93ed0855302cf323f80a5ed718351994a23654edafdd96368bba1e860b026cb27e020d91ad3c3ebc64d4f125246d23025b4a6cf3d8bf951a6d9a6199a220abd3c963e5163dff00d14a282d82402912cdd398f403db1ed1609423063e35ec612dbbb6ae07aa06a5e89d66052d2cad3d45e48a6eee2ad6c128d2d37a61945c785121490bd0141bb5e07ff8d31a4bb0c7dcbf018569382c2b23d5a5bcb30794235b086c1b0c83a0720dd71dd54a9596df1f5a817e9a668d4bc2cb5593d732355be20b619421d8d4be9e104c86733544a0c6e4cdc0116324fca991c918bdc8904df93e85105fe98daaed817ce8c9c4c2718682a71b1c93965fb43cd60df19ce3aa5f41c37c6bb9494473869e63e64b610d2c3692280d9616ac8284bca99d5cfa681bd8879ada92a98b76bc8f2dc52626d54f1ac31b01071359e44b4742029dfc3</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -212,7 +222,7 @@
           <div class="post-tags">
               <a href="/tags/%E7%BA%AA%E4%B8%AD%E9%9B%86%E8%AE%AD/" rel="tag"># 纪中集训</a>
               <a href="/tags/OI/" rel="tag"># OI</a>
-              <a href="/tags/what-learned-today/" rel="tag"># (what learned today)</a>
+              <a href="/tags/%E6%9E%84%E9%80%A0%E9%A2%98%E9%80%89%E5%81%9A/" rel="tag"># 构造题选做</a>
           </div>
 
         
@@ -220,11 +230,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/%E4%B8%AD%E8%80%83%E6%B8%B8%E8%AE%B0/" rel="next" title="中考游记">
-      中考游记 <i class="fa fa-chevron-right"></i>
+    <a href="/%E4%B8%AD%E8%80%83%E6%B8%B8%E8%AE%B0/" rel="prev" title="中考游记">
+      <i class="fa fa-chevron-left"></i> 中考游记
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -294,8 +304,7 @@
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
+          <a href="/archives">
           <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
@@ -385,6 +394,61 @@
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
