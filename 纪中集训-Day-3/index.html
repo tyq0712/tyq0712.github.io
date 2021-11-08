@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"tyq0712.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null,"activeClass":"gitalk"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="纪中集训 Day 3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="纪中集训 Day 3">
+<meta property="og:url" content="http://tyq0712.github.io/%E7%BA%AA%E4%B8%AD%E9%9B%86%E8%AE%AD-Day-3/index.html">
+<meta property="og:site_name" content="tyqtyq 的博客">
+<meta property="og:description" content="纪中集训 Day 3">
+<meta property="og:locale">
+<meta property="article:published_time" content="2021-06-23T01:04:17.000Z">
+<meta property="article:modified_time" content="2021-06-23T08:50:18.402Z">
+<meta property="article:author" content="tyqtyq">
+<meta property="article:tag" content="纪中集训">
+<meta property="article:tag" content="OI">
+<meta property="article:tag" content="(what learned today)">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://tyq0712.github.io/%E7%BA%AA%E4%B8%AD%E9%9B%86%E8%AE%AD-Day-3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
+  };
+</script>
+
+  <title>纪中集训 Day 3 | tyqtyq 的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">tyqtyq 的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://tyq0712.github.io/%E7%BA%AA%E4%B8%AD%E9%9B%86%E8%AE%AD-Day-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="tyqtyq">
+      <meta itemprop="description" content="tyqtyq 的博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="tyqtyq 的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          纪中集训 Day 3
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-23 09:04:17 / 修改时间：16:50:18" itemprop="dateCreated datePublished" datetime="2021-06-23T09:04:17+08:00">2021-06-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="7c64b55d66d68c505d0ac18b1d6f6674258f362dd5bffedc8f9d5760bff645ca">c631a34eda396bfb0137ae62281e8566c7777a24fb0e646b92c3d5f4bb1a9b8ed50d8b4a523c6550699d1c785485afb2b4325eb94e11a71773d2bd7c862da8c96264c239105d69901cdabd6ffb326a2c9af84227b067c44c16c5f6497d86f2d36bae35411eaad0aaa5e250b40a0a37f5550d9ae64da5c3fbb3f0f494a7e49d11b942bff64123f5441b9633d882569891450b8d21d6db8834abf56b30beba24616598b77a7e648194ab03d8cf82a172b4ff1cad7d3bad849587df82c279d8ee8deb2e6c0f1ec2292faf1d968489537ae5e5752c36338206cc445628c88bc279cd2a6794636a07a4a43a00823c04c66d3946a5c3fcdce408586a3d16260205e0278ca1ba9badb43d971e52166908614d480daa2a078278b25a08243696ff2267f971ef92dc45575884871312b2533d7ca50d730bd479307dd041ab42ad21b6832b39f201d742cfbf3224a64b7833897b56ea9c037d3a0a72cb45ea95f99979115092cd9ce1ec45538dd493779fe770ace86048fd919102fdeb521054f57dfc69356bbfa9f4a5964375f00eb4b783a344db23283ada335c0672014a05f14b3921a64c40821486a3ec2717010385cdd302cb1f7b00c6d748970683bdef88bf67bcc341820e0bc4c87bf05cf5a246f9e240876aefc1e66ddc0f10457911253d275a669cbde22243e10f0210e9700875f0dd0edbf0447f9eebf80f79def8f225d7547af0d19c54a9311860065a8ac3b54ca972ab406cbfdb652c6181d6c9fbc468830ddda3e9305c424c80aea09c356235992de2885ec3479668131b3820060533998057044b4639758887af5d32ad3b80f14e5d35abdd66ce9259e35a59e6a682b878f89f8d80c6049dc5eb13a6fb6690c3282e369abf952a3261950f5f3f7ffaea59cf3ec47270f191a9f036bfe42df308d78b02c96772bb33240667b0b34f5e1957cb1682fa17e54007571db534d7538b92ac005a251eb2f8b5575dd431f076c22e1469858f65c643be6d072598727fcb839b3d95a2f045d914ce10a28342ad4449878834664c3e45f800b225bcdd55650b4a136e20c1302c6cd3b7b0b09988653a8cac0daa4ae2e66e2be74d71cb7bc1a9bc9c5b6d9fec1041617b36fe9400f22796107b9c30208ca61e546e6c35e2e2afa70af2308502f1de86e744daa8f95ab40c7a1cb3d81f6772e5384d211d5781895530b8d2df5e42eecd6c7d7739ffe10d85f46f4fd824233ced4a34d0045efee27f5820b1cfb06234af59b4bb7a44d54aab6f03bc03e058b5d892d2f9d0ec51580d5b8c83f32377a2046f0c8e2f6c97bec652a38c87e0d585cd79cd3426519743bd0c4312e377f3fd0d88ae92677d73d79d97889f9dfbe29342d416b2a8b39a5d795ab5aa3f618dd707aa2af187b2dcbf1d50ffa86a90951d964252b741e9006703b09961ac96f6b0920c8213648f0ba402b70a8fd7b2e2d11f5e3364bb4fb6aed42f3dfbf1db8f7a966c560169f3aef79a8e16ea377c943e94fb8db3e1cfd288036afd725ef59b780c7072a5a8b4da84417d29ac593e9661259718c2ba02bbbfa100b55285bf68a7e7821947a460e6c6e916d82013548298a9b87212cb02879feaf8b4abea0b70e2f448ba3818bf5e61492dbfda300fd3d4cf9c535a92e65f357811fd63c7e48f16bd5d77f418b7e9d1d070a882155ef5fe5417f2f9b4fc87c2d6231b1537034f78e78398c034dfb5a5a890458981adbf0ae413f9f7de52a1bf12f3b70d6b55ee63f6e4ce1fa01e2f594d02977b758ec99d604cdef7a0db0cb9a57f014574cd7fdcd755e3b0320bb5486e4e088a7999e1aab9d5a858e70056b64331f92a463fe74f58ad2d77af09ba92354d4b4cfb6dcec4518cff9f308eab4a4287660bc129af76327723927aea1358254565b8a814b4098e8512347eafeac9c05a72867ca3d4d3931772930f53c48edf8148d8f17980f5fbe83632855691f4e9ec2048f4369d8c3f0bb432d4a9d7e9ad7f986d1bad84f6b0d642aa71c781f385dccc6598a2347a6163e944257b25f63e766352f611847831f2cd68d762a04c043dfbcc520bec151b83ca59cbb6ef7c19accf0d0555aaa16c42a273178831b538f4d53c13f28d16640e70520e177e896b7949003e61ddc57a823bd44c7d9680021a2564cc88c6f39d7188f53f43832883f0de5299deaacf9666feb9a1618acae3bc3342fd7686e9392418481e8c1d1f1bc6226b5388cfaac5a8f26d3129d0324f8a48ba4a532af63019990b073dafe586fe546fde0c86d6dd9d4fcd28dba46a8545e395755723093d3391183649eb9318a10233b282fc0b96fc221a6d40fa3aac85af0cad3524d2d04d6d8d7406e42c0205055d600f2d63ce05f363c191c559f048b00558bbcbcda81eb36fed32bc823a383c34c376a77c667f96a4db5d9adee5001ca27e42d7022a1df44510d8ac8636360453cf0664f75d8fdfe4909914a982df91ac3877d0fa1fe424781c38e7480ced68b8856b8ee5112da75719bec077b2418ab0f8aa254520b93eade94b3ac162a82800f89fa0197e033b65066f8da7c94fb2affa6912d7bf54a9e0c6d39f6c689ee89a68db39a015ead9e49d684b1e2ccb682dbd8da4c425bcc607811c7995ec156bbd608fc9c028d23fcf2d6443e4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">密码是机房号码</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%BA%AA%E4%B8%AD%E9%9B%86%E8%AE%AD/" rel="tag"># 纪中集训</a>
+              <a href="/tags/OI/" rel="tag"># OI</a>
+              <a href="/tags/what-learned-today/" rel="tag"># (what learned today)</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E7%BA%AA%E4%B8%AD%E9%9B%86%E8%AE%AD-Day-2/" rel="prev" title="纪中集训 Day 2">
+      <i class="fa fa-chevron-left"></i> 纪中集训 Day 2
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E7%BA%AA%E4%B8%AD%E9%9B%86%E8%AE%AD-Day-4/" rel="next" title="纪中集训 Day 4">
+      纪中集训 Day 4 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">tyqtyq</p>
+  <div class="site-description" itemprop="description">tyqtyq 的博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">tyqtyq</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '2b31bf27c0653ede4e0b',
+      clientSecret: 'c2ca415ad4433974e8a5170bc018b5dbf00ebd3c',
+      repo        : 'tyq0712.github.io',
+      owner       : 'tyq0712',
+      admin       : ['tyq0712'],
+      id          : 'e12b5418fbed0574db8ae1aac30fca9c',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

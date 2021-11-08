@@ -15,7 +15,7 @@ int rd() {
 }
 void rd(int& x) { x=rd(); }
 using namespace std;
-// ll f0=0LL, f1=1LL;
+// ll  f0=0LL, f1=1LL;
 // ll target = 12e9+1, mod = 8e18, md=1e9;
 void output(ll x) {
   if(!x) return ;
