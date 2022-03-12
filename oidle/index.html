@@ -68,6 +68,7 @@
     function solve(id) {
       console.log(id);
       var name = document.getElementById(id.toString()).value;
+      document.getElementById(id.toString()).ariaReadOnly="true";
       console.log(name);
       var p=getproblem(name);
       console.log(database[p]);
