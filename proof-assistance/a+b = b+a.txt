@@ -1,0 +1,64 @@
+a+b = b+a
+
+a+b \in N
+
+suc x = suc 0 + x
+
+suc a + b = suc b + a
+
+a=0 时. suc b = suc 0 + b
+
+a+b = b+a
+
+suc(a)+ b = suc(a+b) = suc(b+a) = suc b + a
+
+suc(b)+a=b+suc(a)
+
+a=0; suc(b)=b+suc(0)
+
+suc(0) = suc(0)
+suc(b)=b+suc(0) => suc(suc(b)) = suc(b) + suc(0)
+
+Lemma 0. n+0 = n
+
+n=0: 0+0 = 0
+假设命题对 n=m 成立 接下来说明命题对 n=suc(m) 成立
+suc(m)+0 = suc(m+0) [加法定义]
+= suc(m) [归纳假设]
+
+Lemma 1. suc(b) = b+suc(0) for all b\in N
+
+b=0: 0+suc(0) = suc(0) [加法定义]
+假设命题对 b=n 成立 接下来说明命题对 b=suc(n) 成立
+suc(n) + suc(0) = suc(n+suc(0))[加法定义] 
+= suc(suc(n)) [归纳假设]
+故命题对 b=suc(n) 也成立
+
+Lemma 2. a+b+c = a+d, 其中 d=b+c
+
+suc(0)+b+c = suc(0+b)+c = suc(b) + c = suc(b+c)
+suc(0)+d = suc(0+d) = sud(d)
+
+a=0: 0+b+c = b+c = d
+假设命题对 a=n 成立 接下来说明命题对 a=suc(n) 成立
+suc(a)+b+c = suc(a+b)+c [加法定义]
+= suc(a+b+c) [加法定义]
+= suc(a+d) [归纳假设]
+
+proposition 1. a+b = b+a for all a, b\in N
+
+a=0: 0+b = b = b+0[Lemma 0]
+假设命题对 a=n 成立 接下来说明命题对 a=suc(n) 成立
+suc(n) + b = suc(n+b) [加法定义]
+= suc(b+n) [归纳假设]
+= b + n + suc(0) [Lemma 1]
+= b + (n + suc(0)) [Lemma 2]
+= b + suc(n) [Lemma 1]
+
+Lemma 2. suc(b)+a=b+suc(a) for all a, b\in N
+
+a=0: suc(b)=b+suc(0) 即 Lemma 1
+假设命题对 a=n 成立 接下来说明命题对 a=suc(n) 成立
+suc(b)+suc(n) = suc(b+suc(n)) [加法定义]
+= b+suc(n)+suc(0) [Lemma 1]
+= b+suc(suc(n)) [Lemma 1]
